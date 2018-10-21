@@ -5,13 +5,12 @@ SELECT CompanyName
 	, Country
 	, City
 	, PostalCode
-FROM dbo.Customers
+FROM Customers
 WHERE PostalCode IS NOT NULL
 
-
-SELECT CompanyName
-	, Country
-	, City
-	, PostalCode
-FROM dbo.Customers
-WHERE NOT(PostalCode IS NULL)
+SELECT c.CompanyName
+	, c.Country
+	, c.City
+	, c.PostalCode
+FROM Customers AS c
+WHERE NOT(c.PostalCode IS NULL)
