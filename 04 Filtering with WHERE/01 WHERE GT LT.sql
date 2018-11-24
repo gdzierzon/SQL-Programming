@@ -1,14 +1,11 @@
-USE Northwind
-GO
+SELECT Title
+	, Price
+FROM dbo.Book
+WHERE Price > 30
+ORDER BY Price DESC
 
-SELECT ProductName
-	, UnitPrice
-FROM dbo.Products
-WHERE UnitPrice > 20
-ORDER BY UnitPrice DESC 
-
-SELECT ProductName
-	, UnitPrice
-FROM dbo.Products
-WHERE UnitPrice <= 20
-ORDER BY UnitPrice DESC 
+SELECT Title
+	, Price
+FROM dbo.Book
+WHERE Price <= 30
+ORDER BY Price DESC

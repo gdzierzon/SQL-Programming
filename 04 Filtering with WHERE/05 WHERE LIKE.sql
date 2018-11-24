@@ -1,12 +1,7 @@
-USE Northwind
-GO
+SELECT *
+FROM dbo.Book
+WHERE Title LIKE 'Administering%'
 
-SELECT CompanyName
-	, Country
-	, City
-FROM dbo.Customers
-WHERE CompanyName LIKE 'A%'
-
-SELECT ProductName
-FROM dbo.Products
-WHERE ProductName LIKE '%hot%'
+SELECT *
+FROM dbo.Book
+WHERE Title LIKE '%SQL%'

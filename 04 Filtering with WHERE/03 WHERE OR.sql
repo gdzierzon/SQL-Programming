@@ -1,9 +1,13 @@
-USE Northwind
-GO
+SELECT Title
+	, Price
+FROM dbo.Book
+WHERE Price < 25
+	OR Price > 45
+ORDER BY Price
 
-SELECT CompanyName
-	, Country
+SELECT FirstName
+	, LastName
 	, City
-FROM dbo.Customers
-WHERE Country = 'USA'
-	OR Country = 'Germany'
+FROM dbo.Customer
+WHERE City = 'Las Vegas'
+		OR City = 'Chicago')

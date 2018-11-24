@@ -1,8 +1,5 @@
-USE Northwind
-GO
-
-SELECT CompanyName
-	, Country
+SELECT FirstName
+	, LastName
 	, City
-FROM dbo.Customers
-WHERE Country IN('USA', 'Germany')
+FROM dbo.Customer
+WHERE City IN('Las Vegas', 'Chicago')

@@ -1,8 +1,5 @@
-USE Northwind
-GO
-
-SELECT ProductName
-	, UnitPrice
-FROM dbo.Products
-WHERE UnitPrice BETWEEN 20 AND 30
-ORDER BY UnitPrice  
+SELECT Title
+	, Price
+FROM dbo.Book
+WHERE Price BETWEEN 25 AND 26.1
+ORDER BY Price

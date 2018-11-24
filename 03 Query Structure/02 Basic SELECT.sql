@@ -1,7 +1,4 @@
-USE BooksPlus
-GO
-
-SELECT * 
+SELECT *
 FROM dbo.Customer
 
 /*

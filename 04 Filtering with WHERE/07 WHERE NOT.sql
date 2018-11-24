@@ -1,16 +1,12 @@
-USE Northwind
-GO
+SELECT *
+FROM dbo.Customer
+WHERE MiddleInitial IS NOT NULL
 
-SELECT CompanyName
-	, Country
-	, City
-	, PostalCode
-FROM Customers
-WHERE PostalCode IS NOT NULL
-
-SELECT c.CompanyName
-	, c.Country
-	, c.City
-	, c.PostalCode
-FROM Customers AS c
-WHERE NOT(c.PostalCode IS NULL)
+SELECT Title
+	, Price
+FROM dbo.Book
+WHERE NOT (
+      Price < 25
+      OR Price > 45
+    )
+ORDER BY Price

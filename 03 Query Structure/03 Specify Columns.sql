@@ -1,6 +1,3 @@
-USE BooksPlus
-GO
-
 SELECT CustomerId
   , FirstName
   , LastName
