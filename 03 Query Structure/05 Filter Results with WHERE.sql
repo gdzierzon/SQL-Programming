@@ -1,10 +1,12 @@
-USE Northwind
+USE BooksPlus
 GO
 
-SELECT Country
-	, CompanyName
-	, ContactName
-	, Phone
-FROM dbo.Customers
-WHERE Country = 'USA'
-ORDER BY CompanyName
+SELECT CustomerId
+  , FirstName
+	, MiddleInitial
+  , LastName
+  , Email
+FROM dbo.Customer
+WHERE MiddleInitial IS NOT NULL
+ORDER BY LastName
+	, FirstName

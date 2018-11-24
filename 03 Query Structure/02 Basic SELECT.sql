@@ -1,8 +1,8 @@
-USE Northwind
+USE BooksPlus
 GO
 
 SELECT * 
-FROM dbo.Customers
+FROM dbo.Customer
 
 /*
 NOTE:

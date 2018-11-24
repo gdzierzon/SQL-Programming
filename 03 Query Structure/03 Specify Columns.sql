@@ -1,8 +1,8 @@
-USE Northwind
+USE BooksPlus
 GO
 
-SELECT Country
-	, CompanyName
-	, ContactName
-	, Phone
-FROM dbo.Customers
+SELECT CustomerId
+  , FirstName
+  , LastName
+  , Email
+FROM dbo.Customer
